@@ -13,6 +13,9 @@
             $time = new TimePrint();
         ?>
         <h1>spl_autoload_register functionality</h1>
+        <p>There are 2 separate files that print date and time accordingly...<br>
+            Then there's an autoload class that was included in index.php! <br>
+            And all it does, it looks for used classes and autoloads them from sources folder!!!</p>
         <table>
             <tr>
                 <td>Today's date is: </td>
@@ -23,5 +26,6 @@
                 <td><?php $time->printTimeSomewhere(); ?></td>
             </tr>
         </table>
+        <hr>
     </body>
 </html>
