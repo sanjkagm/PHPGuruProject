@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Php Guru Task Site</title>
     </head>
     <body>
         <?php
-        // put your code here
+            include "sourceFiles/autoload.php";
+            spl_autoload_register('autoload::loader');
+
+            $date = new DatePrint();
+            $time = new TimePrint();
         ?>
+        <h1>spl_autoload_register functionality</h1>
+        <table>
+            <tr>
+                <td>Today's date is: </td>
+                <td><?php $date->printDateSomewhere(); ?></td>
+            </tr>
+            <tr>
+                <td>Time now is: </td>
+                <td><?php $time->printTimeSomewhere(); ?></td>
+            </tr>
+        </table>
     </body>
 </html>
