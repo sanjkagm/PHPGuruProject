@@ -1,0 +1,7 @@
+[sourceFiles] folder contains includes for index.php webpage
+
+[standaloneTaks] folder contains standalone tasks form Moodle
+
+index.php - output webpage for tasks
+
+consoleio.php - command line interface for current/latest task
