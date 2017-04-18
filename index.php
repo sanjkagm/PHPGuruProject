@@ -27,6 +27,7 @@
             </tr>
         </table>
         <hr>
+        <h2>This is a task about arrays, but in html output!</h2>
         <?php
             $arr = range(0,100);
             $output = array_rand($arr,3);
@@ -38,5 +39,6 @@
             }
             echo "\n".'sum is :'.$result;
         ?>
+        <hr>
     </body>
 </html>
